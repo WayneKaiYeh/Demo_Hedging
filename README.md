@@ -23,28 +23,28 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 ## 🧱 Strategy Pipeline
 ```
-[Position Data]
-│
-▼
-[Rolling β Calculation]
-│ ↳ 60-day OLS window
-│ ↳ Log-returns adjustment
-▼
+  [Position Data]
+         │
+         ▼
+ [Rolling β Calculation]
+         │ ↳ 60-day OLS window
+         │ ↳ Log-returns adjustment
+         ▼
 [Trigger Engine]
-│
-▼
+         │
+         ▼
 [Hedge Calculator]
-│ ↳ Input: Position value × β
-│ ↳ Adjustments:
-│ • Liquidity discount (ETF volume)
-│ • Transaction costs ($3 + 0.0056%)
-▼
-[Execution]
-│
-▼
+         │ ↳ Input: Position value × β
+         │ ↳ Adjustments:
+         │ • Liquidity discount (ETF volume)
+         │ • Transaction costs ($3 + 0.0056%)
+         ▼
+    [Execution]
+         │
+         ▼
 [Performance Attribution]
-    ↳ Compare:
-    • Hedged vs unhedged returns
+         ↳ Compare:
+         • Hedged vs unhedged returns
 
 ```
 
