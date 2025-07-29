@@ -62,7 +62,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 ### 🔹 1. Beta Exposure Analysis
 ![OLS Regression Results1](Output/Charts/OLS.PNG)  
-![OLS Regression Results2](Output/Charts/ols_visualization.PNG)  
+![OLS Regression Results2](Output/Charts/ols_visualization.png)  
 *NVDA vs SPY (60-day window)*:
 - **β**: 1.378 (p<0.001)  
 - **R²**: 0.782 → 78.2% variance explained  
