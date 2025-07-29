@@ -19,6 +19,8 @@ This repository demonstrates a **beta-hedging strategy** using inverse ETFs (e.g
 ---
 
 ## 🧱 Strategy Pipeline
+
+```
 Load Position Holdings + SPY Price Data
 ↓
 Compute log returns and rolling OLS β (per stock vs SPY)
@@ -28,6 +30,7 @@ During market drawdown: trigger inverse ETF hedge calculator
 Output required SH quantity & capital usage
 ↓
 Backtest hedge effectiveness vs unhedged baseline
+```
 
 ---
 
@@ -39,9 +42,9 @@ Backtest hedge effectiveness vs unhedged baseline
 
 ### 🔍 Estimated β Exposure (OLS Result)
 
-Beta: 1.3784 (SPY ↑1% → NVDA ↑1.3784%)
-Alpha: 0.0063 (average excess return, ignore)
-R²: 0.782 (strong linear relationship)
+- **Beta**: 1.3784 (SPY ↑1% → NVDA ↑1.3784%)
+- **Alpha**: 0.0063 (average excess return, ignore)
+- **R²**: 0.782 (strong linear relationship)
 
 ---
 
@@ -60,28 +63,32 @@ hedge_value = stock_position_value * beta
 etf_shares = hedge_value / etf_price
 cost_estimate = hedge_value + (etf_shares * etf_price * proportional_fee) + fixed_fee
 ```
+
 ---
-###  📦 Output
-📦 Position Value: $10,800.00
-📉 Beta Value: 1.3784
-🔁 Hedge Notional (pre-cost): $14,887.13
-💸 Fixed Transaction Fee: $3.00
-📊 Proportional Transaction Cost (round-trip): 0.000056
-💵 Suggested Inverse ETF Purchase: 334.02 shares (ETF Price: $44.57)
-🧾 Estimated Total Hedge Cost ≈ $14,890.95
+
+### 📦 Output
+
+- **📦 Position Value**: $10,800.00
+- **📉 Beta Value**: 1.3784
+- **🔁 Hedge Notional (pre-cost)**: $14,887.13
+- **💸 Fixed Transaction Fee**: $3.00
+- **📊 Proportional Transaction Cost (round-trip)**: 0.000056
+- **💵 Suggested Inverse ETF Purchase**: 334.02 shares (ETF Price: $44.57)
+- **🧾 Estimated Total Hedge Cost**: ≈ $14,890.95
 
 ---
 
 ### 🧪 Outcome: April Tariff Crash Impact
-📦 Position Value: $10,800.00  
-📉 Beta Value: 1.3784  
-🔁 Hedge Notional (pre-cost): $14,887.13  
-💸 Fixed Transaction Fee: $3.00  
-📊 Proportional Transaction Cost (round-trip): 0.000056  
-💵 Suggested Inverse ETF Purchase: 334.02 shares (ETF Price: $44.57)  
-🧾 Estimated Total Hedge Cost ≈ $14,890.95  
----
 
+- **📦 Position Value**: $10,800.00  
+- **📉 Beta Value**: 1.3784  
+- **🔁 Hedge Notional (pre-cost)**: $14,887.13  
+- **💸 Fixed Transaction Fee**: $3.00  
+- **📊 Proportional Transaction Cost (round-trip)**: 0.000056  
+- **💵 Suggested Inverse ETF Purchase**: 334.02 shares (ETF Price: $44.57)  
+- **🧾 Estimated Total Hedge Cost**: ≈ $14,890.95  
+
+---
 
 ## 📎 Contact
 
@@ -89,7 +96,7 @@ For collaboration or access to the full codebase, please contact:
 
 **Kai Yeh**  
 Email: KaiYeh820206@gmail.com  
-GitHub: [WayneKaiYeh](https://github.com/yourusername)
+GitHub: [WayneKaiYeh](https://github.com/WayneKaiYeh)
 
 ---
 
@@ -102,6 +109,3 @@ This repository is shared under the [**Creative Commons BY-NC-ND 4.0 License**](
 - ✅ Attribution required
 
 All rights to the full code, trained models, and source notebooks are reserved.
-
-
-
