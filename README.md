@@ -70,10 +70,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 ### 🔹 2. Hedge Trigger Logic
 ![TradingView Signal](Output/Charts/TradingView_Date.PNG)  
-*Activation Conditions*:
-- Institutional stop-loss clusters (>$9B)
-- VIX term structure inversion
-- Price breaks 5% below MA50
+
 
 ### 🔹 3. Performance Comparison
 ![Hedged vs Unhedged](output/charts/hedged_vs_unhedged.PNG)  
