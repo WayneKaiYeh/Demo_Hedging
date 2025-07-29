@@ -23,7 +23,28 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 ## 🧱 Strategy Pipeline
 
-![Beta Hedge Pipeline](output/charts/pipeline_diagram.png)
+[Position Data]
+│
+▼
+[Rolling β Calculation]
+│ ↳ 60-day OLS window
+│ ↳ Log-returns adjustment
+▼
+[Trigger Engine]
+│
+▼
+[Hedge Calculator]
+│ ↳ Input: Position value × β
+│ ↳ Adjustments:
+│ • Liquidity discount (ETF volume)
+│ • Transaction costs ($3 + 0.0056%)
+▼
+[Execution]
+│
+▼
+[Performance Attribution]
+    ↳ Compare:
+    • Hedged vs unhedged returns
 
 1. **Data Input**: Position holdings + SPY price series
 2. **Risk Analysis**: Rolling beta calculation (per asset)
@@ -36,14 +57,15 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 ## 📊 Core Components
 
 ### 🔹 1. Beta Exposure Analysis
-![OLS Regression Results](output/charts/OLS.PNG)  
+![OLS Regression Results1](Output/Charts/OLS.PNG)  
+![OLS Regression Results2](Output/Charts/ols_visualization.PNG)  
 *NVDA vs SPY (60-day window)*:
 - **β**: 1.378 (p<0.001)  
 - **R²**: 0.782 → 78.2% variance explained  
 - **95% CI**: [1.189, 1.568] → High confidence
 
 ### 🔹 2. Hedge Trigger Logic
-![TradingView Signal](output/charts/TradingView_Date.PNG)  
+![TradingView Signal](Output/Charts/TradingView_Date.PNG)  
 *Activation Conditions*:
 - Institutional stop-loss clusters (>$9B)
 - VIX term structure inversion
