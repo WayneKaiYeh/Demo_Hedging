@@ -23,7 +23,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 ## 🧱 Strategy Pipeline
 ```
-  [Position Data]
+   [Position Data]
          │
          ▼
  [Rolling β Calculation]
@@ -58,6 +58,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 ---
 
 ## 📊 Core Components
+
 
 ### 🔹 1. Beta Exposure Analysis
 ![OLS Regression Results1](Output/Charts/OLS.PNG)  
