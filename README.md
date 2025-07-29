@@ -74,7 +74,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 
 
 ### 🔹 3. Performance Comparison
-![Hedged vs Unhedged](output/charts/hedged_vs_unhedged.PNG)  
+![Hedged vs Unhedged](output/charts/hedged_vs_unhedged.png)  
 *March-April 2025 Results*:
 | Metric          | Unhedged | Hedged  |
 |----------------|----------|---------|
