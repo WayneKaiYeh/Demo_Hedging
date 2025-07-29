@@ -22,7 +22,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 ---
 
 ## 🧱 Strategy Pipeline
-
+```
 [Position Data]
 │
 ▼
@@ -45,6 +45,9 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 [Performance Attribution]
     ↳ Compare:
     • Hedged vs unhedged returns
+
+```
+
 
 1. **Data Input**: Position holdings + SPY price series
 2. **Risk Analysis**: Rolling beta calculation (per asset)
