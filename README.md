@@ -72,6 +72,7 @@ This repository demonstrates a dynamic **beta-hedging strategy** using inverse E
 ![TradingView Signal](Output/Charts/TradingView_Date.PNG)  
 
 
+
 ### 🔹 3. Performance Comparison
 ![Hedged vs Unhedged](output/charts/hedged_vs_unhedged.png)  
 *March-April 2025 Results*:
